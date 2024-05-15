@@ -1,0 +1,43 @@
+.listings-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .listing {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .listing:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .listing img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .listing-info {
+    padding: 10px;
+  }
+  
+  .listing-info h6 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .listing-info p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .listing-info button {
+    margin-top: 10px;
+  }
+  

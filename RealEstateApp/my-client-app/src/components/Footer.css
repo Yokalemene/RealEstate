@@ -1,0 +1,77 @@
+/* Footer.css */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-family: Arial, sans-serif; /* Используем шрифт Arial */
+  }
+  
+  #root {
+    padding-bottom: 60px; /* Измените значение на необходимое */
+}
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-nav li {
+    margin-right: 20px;
+  }
+  
+  .footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover {
+    color: #61dafb;
+  }
+  
+  .footer-text {
+    margin-right: auto;
+  }
+  
+  /* Добавляем стили для медиа-запроса */
+  @media screen and (max-width: 768px) {
+    .footer-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 20px; /* добавим отступ слева для лучшего визуального разделения столбцов */
+    }
+    
+    .footer-nav li {
+      margin-bottom: 10px;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+  .footer-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  .footer-nav li {
+    margin-bottom: 10px;
+  }
+}

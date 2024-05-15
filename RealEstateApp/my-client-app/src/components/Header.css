@@ -1,0 +1,69 @@
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавляем небольшую тень для эффекта поднятия */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  #root {
+    padding-top: 80px; /* Измените значение на необходимое */
+}
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Выравниваем элементы по центру */
+    max-width: 1200px; /* Ограничиваем ширину, чтобы контент не растягивался на всю страницу */
+    margin: 0 auto; /* Центрируем внутри родительского контейнера */
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #61dafb; /* изменение цвета при наведении */
+  }
+
+
+  .personal-account-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 26px;
+    z-index: 10001;
+    cursor: pointer;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav li {
+      margin-bottom: 10px;
+    }
+  }
