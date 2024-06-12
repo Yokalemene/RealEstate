@@ -1,0 +1,223 @@
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#root {
+  padding-top: 80px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #61dafb;
+}
+
+.personal-account-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 26px;
+  z-index: 10001;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Стили для кнопки выхода */
+.header-logout-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Центрирование внутри кнопки */
+  width: 100%; /* Полная ширина кнопки */
+  padding: 10px 0; /* Добавлено для более крупного нажатия */
+}
+
+.header-logout-button:hover {
+  color: #61dafb;
+  background-color: transparent !important;
+}
+
+/* Стили для иконки выхода */
+.header-logout-icon {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Стили для выпадающего меню */
+.exit-dropdown-menu {
+  position: absolute;
+  top: 100%; /* Обновлено для позиционирования под иконкой */
+  right: -7px; /* Выровнять по правому краю иконки */
+  background-color: #333;
+  box-shadow: 0 2px 4px #333;
+  border-radius: 4px;
+  padding: 6px 0;
+  min-width: 35px; /* Минимальная ширина для содержания кнопки */
+  text-align: center; /* Центрировать текст внутри меню */
+}
+
+/* Обновляем стили для ссылок в выпадающем меню */
+.exit-dropdown-menu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 25px;
+  
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.exit-dropdown-menu a:hover {
+  background-color: #f8f9fa;
+}
+
+
+/* Основные стили для Header */
+.header {
+  background-color: #333;
+  padding: 10px;
+}
+
+.header .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header .nav ul li {
+  margin: 0 10px;
+}
+
+.header .nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .nav ul li {
+    margin: 5px 0;
+  }
+
+  .header .nav ul li a {
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (portrait tablets, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .header .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .nav ul li {
+    margin: 5px 0;
+  }
+
+  .header .nav ul li a {
+    font-size: 16px;
+  }
+}
+
+/* Large devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header .nav ul {
+    justify-content: space-around;
+  }
+
+  .header .nav ul li {
+    margin: 0 10px;
+  }
+
+  .header .nav ul li a {
+    font-size: 18px;
+  }
+}
+
+/* Extra large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .header .nav ul {
+    justify-content: space-around;
+  }
+
+  .header .nav ul li {
+    margin: 0 10px;
+  }
+
+  .header .nav ul li a {
+    font-size: 18px;
+  }
+}
+
+/* Extra extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .header .nav ul {
+    justify-content: space-around;
+  }
+
+  .header .nav ul li {
+    margin: 0 15px;
+  }
+
+  .header .nav ul li a {
+    font-size: 20px;
+  }
+}

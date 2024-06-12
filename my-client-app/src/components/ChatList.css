@@ -1,0 +1,29 @@
+.chat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .chat-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chat-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .chat-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .chat-item p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #666;
+  }
+  

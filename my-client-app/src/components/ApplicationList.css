@@ -1,0 +1,29 @@
+.application-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .application-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  .application-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .application-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .application-item p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #666;
+  }
+  

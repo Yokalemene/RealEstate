@@ -1,0 +1,235 @@
+.admin-panel {
+  display: flex;
+  margin: 20px;
+}
+
+.nav-menu {
+  width: 150px;
+  transition: width 0.3s ease;
+}
+
+.nav-menu.collapsed {
+  width: 50px;
+}
+
+.nav-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+}
+
+.nav-menu-content {
+  display: block;
+}
+
+.nav-menu-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-menu-content ul li {
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-menu-content ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  width: calc(100% - 16px);
+  margin-bottom: 20px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.actions {
+  margin-bottom: 20px;
+}
+
+.actions button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.actions button:hover {
+  background-color: #0056b3;
+}
+
+.action-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  margin: 0 2px;
+}
+
+.action-button.edit {
+  color: #007bff;
+}
+
+.action-button.edit:hover {
+  color: #ffffff;
+  background-color: #007bff;
+}
+
+.action-button.confirm {
+  color: green;
+}
+
+.action-button.confirm:hover  {
+  color: white;
+  background-color: green;
+}
+
+.action-button.cancel {
+  color: red;
+}
+
+.action-button.cancel:hover  {
+  color: white;
+  background-color: red;
+}
+
+
+.action-button.delete {
+  color: red;
+}
+
+.action-button.delete:hover  {
+  color: white;
+  background-color: red;
+}
+
+.action-button.approve {
+  color: green;
+}
+
+.action-button.approve:hover  {
+  color: white;
+  background-color: green;
+}
+
+
+.action-button.approved {
+  color: gray;
+  cursor: default;
+}
+
+.action-button.complete {
+  color: #007bff;
+}
+
+.action-button.complete:hover  {
+  color: #ffffff;
+  background-color: #007bff;
+}
+
+.nav-toggle-btn {
+  display: block;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.nav-toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+.admin-panel.collapsed .nav-menu {
+  width: 50px;
+}
+
+.sub-tab-menu {
+  margin-bottom: 20px;
+}
+
+.sub-tab-menu button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.sub-tab-menu button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.nav-menu ul li.active {
+  background-color: #007bff; /* Цвет фона для активного элемента */
+  color: white; /* Цвет текста для активного элемента */
+}
+
+.nav-menu ul li.active svg {
+  color: white; /* Цвет иконки для активного элемента */
+}
+
+
+.create-employee-form {
+  margin-top: 20px;
+}
+
+.create-employee-form input, .create-employee-form select {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.create-employee-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.create-employee-form button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,88 @@
+/* General Styles */
+.employee-panel {
+    background-color: #f9fafb;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* AppBar Styles */
+  .app-bar {
+   
+    background-color: #1976d2; /* Change this to your desired background color */
+    color: #ffffff;
+  }
+  
+  /* Title Styles */
+  .employeePaneltableTitle {
+    flex-grow: 1;
+    color: #ffffff;
+  }
+  
+  /* Tabs Styles */
+  .tabs {
+    margin-top: 20px;
+  }
+  
+  .tab {
+    text-transform: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab:hover {
+    color: #ffffff;
+    background-color: #1976d2; /* Change this to your desired hover color */
+  }
+  
+  /* Selected Tab Indicator for Main Tabs */
+  .Mui-selected {
+    color: #1976d2; /* Change the text color of selected tab */
+    border-bottom: 2px solid ; /* Add a bottom border to indicate selection */
+  }
+  .Mui-selected:hover {
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+  /* Tab Content Styles */
+  .tab-content {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  /* Notification Item Styles */
+  .notification-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  
+  .notification-item:last-child {
+    border-bottom: none;
+  }
+  
+  .notification-message {
+    flex-grow: 1;
+  }
+  
+  .notification-mark-read {
+    margin-left: 10px;
+  }
+  
+.sub-tabs .MuiTabs-indicator {
+    background-color: #1976d2;
+  }
+
+.sub-tabs .MuiTab-root.Mui-selected {
+    color: #1976d2;
+    
+  }
+.sub-tabs .MuiTab-root:hover {
+    color: #ffffff;
+    background-color: #1976d2;
+  }

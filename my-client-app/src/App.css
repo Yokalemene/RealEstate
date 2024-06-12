@@ -1,0 +1,149 @@
+/* App.css */
+
+/* Основные стили для всего приложения */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.header {
+  background-color: #333;
+  padding: 10px;
+}
+
+.header .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header .nav ul li {
+  margin: 0 10px;
+}
+
+.header .nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer .footer-nav {
+  margin-right: 20px;
+}
+
+.footer .footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer .footer-nav ul li {
+  margin: 5px 0;
+}
+
+.footer .contact-info {
+  max-width: 200px;
+}
+
+.footer .social-links {
+  display: flex;
+  gap: 10px;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-nav {
+    margin: 10px 0;
+  }
+}
+
+/* Medium devices (portrait tablets, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .header .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-nav {
+    margin: 10px 0;
+  }
+}
+
+/* Large devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header .nav ul {
+    justify-content: space-around;
+  }
+
+  .footer .footer-content {
+    justify-content: space-between;
+  }
+
+  .footer .footer-nav {
+    margin-right: 20px;
+  }
+}
+
+/* Extra large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .header .nav ul {
+    justify-content: space-around;
+  }
+
+  .footer .footer-content {
+    justify-content: space-between;
+  }
+
+  .footer .footer-nav {
+    margin-right: 20px;
+  }
+}
+
+/* Extra extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .header .nav ul {
+    justify-content: space-around;
+  }
+
+  .footer .footer-content {
+    justify-content: space-between;
+  }
+
+  .footer .footer-nav {
+    margin-right: 20px;
+  }
+}
